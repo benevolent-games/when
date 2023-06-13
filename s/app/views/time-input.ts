@@ -26,7 +26,7 @@ export const TimeInputView = view({shadow: false}, use => () => {
 				class=time_input
 				type="datetime-local"
 				@change=${update_draft_time}
-				@keypress=${update_draft_time}
+				@input=${update_draft_time}
 				/>
 		</label>
 
@@ -36,7 +36,7 @@ export const TimeInputView = view({shadow: false}, use => () => {
 				class=label_input
 				type="text"
 				@change=${update_draft_label}
-				@keypress=${update_draft_label}
+				@input=${update_draft_label}
 				/>
 		</label>
 
