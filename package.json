@@ -24,7 +24,7 @@
 		"typescript": "tsc",
 		"web": "turtle --in=s:x --out=x --exclude='**/*.partial.html.js' +verbose",
 		"watch-typescript": "tsc -w",
-		"watch-web": "chokidar \"package.json\" \"s/**/*.css\" \"x/**/*.html.js\" \"x/**/*.turtle.js\" \"x/**/*.context.js\" \"s/**/*.md\" -c \"npm run web -s && echo 'rebuilt web'\"",
+		"watch-web": "chokidar 'package.json' 's/**/*.css' 'x/**/*.html.js' 'x/**/*.turtle.js' 'x/**/*.context.js' 's/**/*.md' -c 'npm run web -s && echo rebuilt web'",
 		"watch": "run-p watch-typescript watch-web",
 		"test": "exit 0"
 	},
