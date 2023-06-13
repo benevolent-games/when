@@ -3,7 +3,7 @@ import {html} from "lit"
 import {view} from "@chasemoskal/magical"
 import {TimeWizard} from "../widgets/time_wizard.js"
 
-export const TimeDisplayView = view(
+export const ViewingTimeDisplay = view(
 	{shadow: false},
 	() => (t: TimeWizard, label: string) => html`
 

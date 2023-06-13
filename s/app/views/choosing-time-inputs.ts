@@ -3,7 +3,7 @@ import {html} from "lit"
 import {view} from "@chasemoskal/magical"
 import {generate_viewing_link} from "../widgets/generate_viewing_link.js"
 
-export const TimeInputView = view({shadow: false}, use => () => {
+export const ChoosingTimeInputs = view({shadow: false}, use => () => {
 	const [time, set_time] = use.state<undefined | number>(undefined)
 	const [label, set_label] = use.state<string>("")
 
